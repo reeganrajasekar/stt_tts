@@ -6,6 +6,14 @@
 	<title>Speech to Text</title>
 	<link rel="stylesheet" href="/static/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/style.css">
+	<style>
+		body{
+			background-image:url('/static/bg.jpg');
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	</style>
 </head>
 
 <body>
@@ -14,6 +22,9 @@
             <a class="navbar-brand" style="font-size:22px;font-weight:900;color:#2b74e2" href="">
                 Speech to Text
             </a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 					<li class="nav-item">
@@ -30,7 +41,7 @@
     </nav>
 
 	<div class="container my-4 words">
-		<p id="p" class="border p-4 rounded" contenteditable style="font-size:18px;font-weight: 600;text-align: justify;color:#444">Try to speak</p>
+		<p id="p" class="border p-4 rounded" contenteditable style="background:white;font-size:18px;font-weight: 600;text-align: justify;color:#444">Try to speak</p>
 	</div>
 
 	<script>
@@ -57,5 +68,7 @@
 		}
 	</script>
 </body>
+<script src="/static/js/bootstrap.bundle.js"></script>
+
 
 </html>
